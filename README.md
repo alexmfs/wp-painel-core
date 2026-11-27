@@ -16,7 +16,7 @@ No `composer.json` do Bedrock, adicione o repositório VCS:
 Depois instale a versão estável:
 
 ```powershell
-composer require alexmfs/painel-core:^1.0
+composer require alexmfs/painel-core:1.0.*
 ```
 
 O pacote é público: a instalação não exige chave, login ou token. O Bedrock precisa permitir Packagist.org e ter o repositório WPackagist configurado para as dependências CMB2 e JWT Auth.
