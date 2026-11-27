@@ -1,0 +1,66 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Inter, Arial, sans-serif" />
+      <mj-text font-size="15px" line-height="24px" color="#374151" />
+      <mj-button background-color="#111827" border-radius="6px" font-size="14px" font-weight="600" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#f3f4f6">
+
+    <!-- Header -->
+    <mj-section background-color="#111827" padding="24px 0">
+      <mj-column>
+        <mj-text align="center" color="#ffffff" font-size="20px" font-weight="700" letter-spacing="1px">
+          RockHub2
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Saudação -->
+    <mj-section background-color="#ffffff" padding="40px 32px 0">
+      <mj-column>
+        <mj-text font-size="22px" font-weight="700" color="#111827" padding-bottom="8px">
+          Olá, {{ name }} 👋
+        </mj-text>
+        <mj-text padding-bottom="24px">
+          Seu acesso ao painel foi criado. Use as credenciais abaixo para entrar:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Bloco de credenciais -->
+    <mj-section background-color="#f9fafb" border-left="4px solid #111827" padding="16px 32px">
+      <mj-column>
+        <mj-text font-size="13px" color="#6b7280" padding-bottom="2px">Email</mj-text>
+        <mj-text font-weight="600" color="#111827" padding-bottom="12px">{{ email }}</mj-text>
+        <mj-text font-size="13px" color="#6b7280" padding-bottom="2px">Senha temporária</mj-text>
+        <mj-text font-weight="600" color="#111827" font-family="'Courier New', monospace">{{ temp_password }}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA + aviso -->
+    <mj-section background-color="#ffffff" padding="24px 32px 40px">
+      <mj-column>
+        <mj-button href="{{ login_url }}" align="left">
+          Acessar o painel
+        </mj-button>
+        <mj-spacer height="24px" />
+        <mj-text font-size="13px" color="#9ca3af">
+          Recomendamos trocar a senha no primeiro acesso. Se você não solicitou esse cadastro, ignore este email.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section padding="24px 0">
+      <mj-column>
+        <mj-text align="center" font-size="12px" color="#9ca3af">
+          © {{ ano }} RockHub2. Todos os direitos reservados.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
